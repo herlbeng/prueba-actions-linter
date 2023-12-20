@@ -1,0 +1,12 @@
+name: Actions
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+    steps:
+    - uses: .github/workflows/pylint.yml
+      with:
+      config-path: .github/workflows/pylint.yml
