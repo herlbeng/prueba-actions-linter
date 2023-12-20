@@ -62,7 +62,7 @@ def handle_disconnect(table, connection_id):
         table.delete_item(Key={"connection_id": connection_id})
         logger.info("Disconnected connection %s.", connection_id)
     except ClientError:
-        logger.exception("Couldn't disconnect connection %s.", connection_id #error4
+        logger.exception("Couldn't disconnect connection %s.", connection_id )
         status_code = 503
     return status_code
 
