@@ -13,9 +13,7 @@ API Gateway Management API.
 Logs written by this handler can be found in Amazon CloudWatch.
 """
 
-#Agregando errores 
-
-import jsom #error1
+import json
 import logging
 import os
 import boto3
@@ -25,7 +23,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 
-def handle_connect(user_name, table, connection_id, ): #error2
+def handle_connect(user_name, table, connection_id, ): #error2 No marca este error
     """
     Handles new connections by adding the connection ID and user name to the
     DynamoDB table.
@@ -45,7 +43,7 @@ def handle_connect(user_name, table, connection_id, ): #error2
             "Couldn't add connection %s for user %s.", connection_id, user_name
         )
         status_code = 503
-return status_code #error3
+return status_code #error3 tampoco este
 
 
 def handle_disconnect(table, connection_id):
