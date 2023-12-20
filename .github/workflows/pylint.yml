@@ -25,4 +25,4 @@ jobs:
         pip install flake8
     - name: Analysing the code with flake8
       run: |
-        flake8 lambda:chat.py
+        flake8 lambda_chat.py
