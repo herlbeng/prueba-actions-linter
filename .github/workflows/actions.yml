@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
     steps:
-    - uses: .github/workflows/pylint.yml
+    - uses: herlbeng/prueba-actions-linter/.github/workflows/pylint.yml@main
       with:
       config-path: .github/workflows/pylint.yml
