@@ -23,7 +23,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 
-def handle_connect(user_name, table, connection_id, ): #error2 No marca este error
+def handle_connect(user_name, table, connection_id):
     """
     Handles new connections by adding the connection ID and user name to the
     DynamoDB table.
