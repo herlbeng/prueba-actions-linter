@@ -43,7 +43,7 @@ def handle_connect(user_name, table, connection_id, ): #error2 No marca este err
             "Couldn't add connection %s for user %s.", connection_id, user_name
         )
         status_code = 503
-return status_code #error3 tampoco este
+    return status_code
 
 
 def handle_disconnect(table, connection_id):
