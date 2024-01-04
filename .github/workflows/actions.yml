@@ -8,3 +8,6 @@ jobs:
     uses: herlbeng/prueba-actions-linter/.github/workflows/pylint.yml@main
     with:
       config-path: .github/workflows/pylint.yml
+    uses: herlbeng/prueba-actions-linter/.github/workflows/s3.yml@main
+    with:
+      config-path: .github/workflows/s3.yml               
