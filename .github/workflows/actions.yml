@@ -1,13 +1,14 @@
 name: Actions
 
 on: [push]
+  workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  Pylint:
     uses: herlbeng/prueba-actions-linter/.github/workflows/pylint.yml@main
     with:
       config-path: .github/workflows/pylint.yml
+  Upload:      
     uses: herlbeng/prueba-actions-linter/.github/workflows/s3.yml@main
     with:
       config-path: .github/workflows/s3.yml               
