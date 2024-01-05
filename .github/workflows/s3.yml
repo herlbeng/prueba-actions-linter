@@ -1,9 +1,7 @@
 name: S3 Upload
 
-on:
-  push:
-    branches:
-      - main
+on: 
+  workflow_call:
 
 jobs:
   build:
@@ -11,7 +9,6 @@ jobs:
     steps:
       - name: Checking Repository
         uses: actions/checkout@v3
-      - name: Installing Node.js
       - name: Configure AWS CLI
         uses: aws-actions/configure-aws-credentials@v2
         with:
