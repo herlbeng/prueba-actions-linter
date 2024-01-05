@@ -1,7 +1,6 @@
 name: Actions
 
 on: [push]
-  workflow_dispatch:
 
 jobs:
   Pylint:
